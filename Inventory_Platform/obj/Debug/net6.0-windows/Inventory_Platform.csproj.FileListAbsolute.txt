@@ -1,0 +1,17 @@
+C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\bin\Debug\net6.0-windows\Inventory_Platform.exe
+C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\bin\Debug\net6.0-windows\Inventory_Platform.deps.json
+C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\bin\Debug\net6.0-windows\Inventory_Platform.runtimeconfig.json
+C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\bin\Debug\net6.0-windows\Inventory_Platform.dll
+C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\bin\Debug\net6.0-windows\Inventory_Platform.pdb
+C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\obj\Debug\net6.0-windows\Inventory_Platform.frmRegister.resources
+C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\obj\Debug\net6.0-windows\Inventory_Platform.frmLogin.resources
+C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\obj\Debug\net6.0-windows\Inventory_Platform.csproj.GenerateResource.cache
+C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\obj\Debug\net6.0-windows\Inventory_Platform.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\obj\Debug\net6.0-windows\Inventory_Platform.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\obj\Debug\net6.0-windows\Inventory_Platform.AssemblyInfo.cs
+C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\obj\Debug\net6.0-windows\Inventory_Platform.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\obj\Debug\net6.0-windows\Inventory_Platform.dll
+C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\obj\Debug\net6.0-windows\refint\Inventory_Platform.dll
+C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\obj\Debug\net6.0-windows\Inventory_Platform.pdb
+C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\obj\Debug\net6.0-windows\Inventory_Platform.genruntimeconfig.cache
+C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\obj\Debug\net6.0-windows\ref\Inventory_Platform.dll
