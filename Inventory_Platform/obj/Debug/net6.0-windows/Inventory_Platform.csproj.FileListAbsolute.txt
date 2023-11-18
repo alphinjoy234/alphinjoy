@@ -15,3 +15,11 @@ C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\obj\
 C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\obj\Debug\net6.0-windows\Inventory_Platform.pdb
 C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\obj\Debug\net6.0-windows\Inventory_Platform.genruntimeconfig.cache
 C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\obj\Debug\net6.0-windows\ref\Inventory_Platform.dll
+C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\obj\Debug\net6.0-windows\Inventory_Platform.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\obj\Debug\net6.0-windows\Inventory_Platform.csproj.CopyComplete

@@ -83,6 +83,7 @@
             txtpassword.Location = new Point(33, 220);
             txtpassword.Multiline = true;
             txtpassword.Name = "txtpassword";
+            txtpassword.PasswordChar = '•';
             txtpassword.Size = new Size(216, 28);
             txtpassword.TabIndex = 4;
             // 
@@ -146,6 +147,7 @@
             button1.TabIndex = 8;
             button1.Text = "REGISTER";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -160,6 +162,7 @@
             button2.TabIndex = 9;
             button2.Text = "CLEAR";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // label5
             // 

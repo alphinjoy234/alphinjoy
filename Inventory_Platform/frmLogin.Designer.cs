@@ -51,6 +51,7 @@
             label6.Size = new Size(130, 19);
             label6.TabIndex = 23;
             label6.Text = "Create An Account";
+            label6.Click += label6_Click;
             // 
             // label5
             // 
@@ -76,6 +77,7 @@
             button2.TabIndex = 21;
             button2.Text = "CLEAR";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -91,6 +93,7 @@
             button1.TabIndex = 20;
             button1.Text = "LOGIN";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // checkbxShowPas
             // 
@@ -105,6 +108,7 @@
             checkbxShowPas.TabIndex = 19;
             checkbxShowPas.Text = "Show Password";
             checkbxShowPas.UseVisualStyleBackColor = true;
+            checkbxShowPas.CheckedChanged += checkbxShowPas_CheckedChanged;
             // 
             // txtpassword
             // 
@@ -178,7 +182,7 @@
             Font = new Font("Comic Sans MS", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             ForeColor = SystemColors.ActiveCaption;
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "frmLogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmLogin";
