@@ -30,23 +30,28 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dashboard));
             panel1 = new Panel();
+            button4 = new Button();
+            button3 = new Button();
+            button2 = new Button();
+            button1 = new Button();
             panel4 = new Panel();
             panel3 = new Panel();
             panel2 = new Panel();
             label1 = new Label();
             pictureBox1 = new PictureBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
+            panel5 = new Panel();
+            button5 = new Button();
+            button6 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel5.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(64, 64, 64);
+            panel1.Controls.Add(button6);
             panel1.Controls.Add(button4);
             panel1.Controls.Add(button3);
             panel1.Controls.Add(button2);
@@ -59,6 +64,67 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(277, 700);
             panel1.TabIndex = 0;
+            // 
+            // button4
+            // 
+            button4.Cursor = Cursors.Hand;
+            button4.Dock = DockStyle.Bottom;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.ForeColor = Color.White;
+            button4.Location = new Point(15, 580);
+            button4.Name = "button4";
+            button4.Size = new Size(247, 60);
+            button4.TabIndex = 7;
+            button4.Text = "EXIT";
+            button4.TextImageRelation = TextImageRelation.ImageBeforeText;
+            button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.Cursor = Cursors.Hand;
+            button3.Dock = DockStyle.Bottom;
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.ForeColor = Color.White;
+            button3.Location = new Point(15, 640);
+            button3.Name = "button3";
+            button3.Size = new Size(247, 60);
+            button3.TabIndex = 6;
+            button3.Text = "HELP";
+            button3.TextImageRelation = TextImageRelation.ImageBeforeText;
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // button2
+            // 
+            button2.Cursor = Cursors.Hand;
+            button2.Dock = DockStyle.Top;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(15, 159);
+            button2.Name = "button2";
+            button2.Size = new Size(247, 60);
+            button2.TabIndex = 5;
+            button2.Text = "PRODUCT";
+            button2.TextImageRelation = TextImageRelation.ImageBeforeText;
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            button1.Cursor = Cursors.Hand;
+            button1.Dock = DockStyle.Top;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(15, 99);
+            button1.Name = "button1";
+            button1.Size = new Size(247, 60);
+            button1.TabIndex = 4;
+            button1.Text = "VENDOR";
+            button1.TextImageRelation = TextImageRelation.ImageBeforeText;
+            button1.UseVisualStyleBackColor = true;
             // 
             // panel4
             // 
@@ -109,66 +175,41 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // button1
+            // panel5
             // 
-            button1.Cursor = Cursors.Hand;
-            button1.Dock = DockStyle.Top;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(15, 99);
-            button1.Name = "button1";
-            button1.Size = new Size(247, 60);
-            button1.TabIndex = 4;
-            button1.Text = "VENDOR";
-            button1.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button1.UseVisualStyleBackColor = true;
+            panel5.Controls.Add(button5);
+            panel5.Dock = DockStyle.Top;
+            panel5.Location = new Point(0, 0);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(923, 56);
+            panel5.TabIndex = 1;
             // 
-            // button2
+            // button5
             // 
-            button2.Cursor = Cursors.Hand;
-            button2.Dock = DockStyle.Top;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(15, 159);
-            button2.Name = "button2";
-            button2.Size = new Size(247, 60);
-            button2.TabIndex = 5;
-            button2.Text = "PRODUCT";
-            button2.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button2.UseVisualStyleBackColor = true;
+            button5.BackColor = Color.Transparent;
+            button5.BackgroundImage = (Image)resources.GetObject("button5.BackgroundImage");
+            button5.BackgroundImageLayout = ImageLayout.Zoom;
+            button5.FlatAppearance.BorderSize = 0;
+            button5.Location = new Point(884, 12);
+            button5.Name = "button5";
+            button5.Size = new Size(33, 33);
+            button5.TabIndex = 0;
+            button5.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // button6
             // 
-            button3.Cursor = Cursors.Hand;
-            button3.Dock = DockStyle.Bottom;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(15, 640);
-            button3.Name = "button3";
-            button3.Size = new Size(247, 60);
-            button3.TabIndex = 6;
-            button3.Text = "HELP";
-            button3.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
-            // 
-            // button4
-            // 
-            button4.Cursor = Cursors.Hand;
-            button4.Dock = DockStyle.Bottom;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(15, 580);
-            button4.Name = "button4";
-            button4.Size = new Size(247, 60);
-            button4.TabIndex = 7;
-            button4.Text = "INFO";
-            button4.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button4.UseVisualStyleBackColor = true;
+            button6.Cursor = Cursors.Hand;
+            button6.Dock = DockStyle.Bottom;
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.ForeColor = Color.White;
+            button6.Location = new Point(15, 520);
+            button6.Name = "button6";
+            button6.Size = new Size(247, 60);
+            button6.TabIndex = 8;
+            button6.Text = "INFO";
+            button6.TextImageRelation = TextImageRelation.ImageBeforeText;
+            button6.UseVisualStyleBackColor = true;
             // 
             // dashboard
             // 
@@ -176,6 +217,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1200, 700);
+            Controls.Add(panel5);
             Controls.Add(panel1);
             Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             FormBorderStyle = FormBorderStyle.None;
@@ -187,6 +229,7 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel5.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -202,5 +245,8 @@
         private Button button3;
         private Button button2;
         private Button button4;
+        private Panel panel5;
+        private Button button5;
+        private Button button6;
     }
 }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using Microsoft.Win32;
-using MySql.Data.MySqlClient;
+
 
 namespace Inventory_Platform
 {
@@ -18,18 +18,18 @@ namespace Inventory_Platform
         public frmLogin()
         {
             InitializeComponent();
-        } 
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-            string ConnectionString = @"server=localhost;uid=root;pwd=1234;database=CITISOFT";
+            string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\Database1.mdf;Integrated Security=True";
 
-            var con = new MySqlConnection(ConnectionString);
+            var con = new SqlConnection(ConnectionString);
 
 
             con.Open();
             string login = "SELECT * FROM LOGIN WHERE USERNAME='" + txtUsername.Text + "' and PASSWORD ='" + txtpassword.Text + "'";
-            var cmd = new MySqlCommand(login, con);
-            MySqlDataReader reader = cmd.ExecuteReader();
+            var cmd = new SqlCommand(login, con);
+            SqlDataReader reader = cmd.ExecuteReader();
             if (reader.Read() == true)
             {
                 new dashboard().Show();
@@ -39,8 +39,8 @@ namespace Inventory_Platform
             else
             {
                 MessageBox.Show("The Username or password is incorrect", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtUsername.Text = "username";
-                txtpassword.Text = "password";
+                txtUsername.Text = "";
+                txtpassword.Text = "";
                 txtUsername.Focus();
             }
 
@@ -67,17 +67,15 @@ namespace Inventory_Platform
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            txtUsername.Text = "";
-            txtpassword.Text = "";
-            txtUsername.Focus();
-        }
+       
 
         private void label6_Click(object sender, EventArgs e)
         {
         }
 
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }
