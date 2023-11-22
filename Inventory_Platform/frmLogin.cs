@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using Microsoft.Win32;
+using MySql.Data.MySqlClient;
 
 namespace Inventory_Platform
 {
@@ -17,24 +18,35 @@ namespace Inventory_Platform
         public frmLogin()
         {
             InitializeComponent();
-        }
+        } 
         private void button1_Click(object sender, EventArgs e)
         {
-            string ConnectionString = "Data Source=LAPTOP-L9RF21BK;Initial Catalog=UserID;Integrated Security=True";
+            string ConnectionString = @"server=localhost;uid=root;pwd=1234;database=CITISOFT";
 
-            SqlConnection con = new SqlConnection(ConnectionString);
+            var con = new MySqlConnection(ConnectionString);
+
+
             con.Open();
-            string login = "SELECT * FROM UserID WHERE EmailID='" + txtUsername.Text + "' and Passwd='" + txtpassword.Text + "'";
-            SqlCommand cmd = new SqlCommand(login, con);
-            SqlDataReader dr = cmd.ExecuteReader();
-            if (dr.Read() == true)
+            string login = "SELECT * FROM LOGIN WHERE USERNAME='" + txtUsername.Text + "' and PASSWORD ='" + txtpassword.Text + "'";
+            var cmd = new MySqlCommand(login, con);
+            MySqlDataReader reader = cmd.ExecuteReader();
+            if (reader.Read() == true)
             {
+                new dashboard().Show();
+                this.Hide();
 
             }
-            cmd.ExecuteNonQuery();
-            con.Close();
+            else
+            {
+                MessageBox.Show("The Username or password is incorrect", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtUsername.Text = "username";
+                txtpassword.Text = "password";
+                txtUsername.Focus();
+            }
+
 
         }
+
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
@@ -64,8 +76,8 @@ namespace Inventory_Platform
 
         private void label6_Click(object sender, EventArgs e)
         {
-            new frmRegister().Show();
-            this.Hide();
         }
+
+
     }
 }

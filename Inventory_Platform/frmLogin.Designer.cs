@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label6 = new Label();
-            label5 = new Label();
-            button2 = new Button();
             button1 = new Button();
             checkbxShowPas = new CheckBox();
             txtpassword = new TextBox();
@@ -39,45 +36,6 @@
             label2 = new Label();
             label1 = new Label();
             SuspendLayout();
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Cursor = Cursors.Hand;
-            label6.Font = new Font("Comic Sans MS", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.ForeColor = Color.SteelBlue;
-            label6.Location = new Point(77, 431);
-            label6.Name = "label6";
-            label6.Size = new Size(130, 19);
-            label6.TabIndex = 23;
-            label6.Text = "Create An Account";
-            label6.Click += label6_Click;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Comic Sans MS", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.ForeColor = SystemColors.ActiveCaption;
-            label5.Location = new Point(54, 412);
-            label5.Name = "label5";
-            label5.Size = new Size(167, 19);
-            label5.TabIndex = 22;
-            label5.Text = "Don't Have An Account?";
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.White;
-            button2.Cursor = Cursors.Hand;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Nirmala UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.ForeColor = Color.SteelBlue;
-            button2.Location = new Point(28, 374);
-            button2.Name = "button2";
-            button2.Size = new Size(216, 35);
-            button2.TabIndex = 21;
-            button2.Text = "CLEAR";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -148,9 +106,9 @@
             label2.ForeColor = SystemColors.ActiveCaption;
             label2.Location = new Point(40, 137);
             label2.Name = "label2";
-            label2.Size = new Size(81, 25);
+            label2.Size = new Size(92, 25);
             label2.TabIndex = 13;
-            label2.Text = "Email Id";
+            label2.Text = "Username";
             // 
             // label1
             // 
@@ -168,10 +126,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(289, 489);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(button2);
+            ClientSize = new Size(289, 423);
             Controls.Add(button1);
             Controls.Add(checkbxShowPas);
             Controls.Add(txtpassword);
@@ -192,10 +147,6 @@
         }
 
         #endregion
-
-        private Label label6;
-        private Label label5;
-        private Button button2;
         private Button button1;
         private CheckBox checkbxShowPas;
         private TextBox txtpassword;
