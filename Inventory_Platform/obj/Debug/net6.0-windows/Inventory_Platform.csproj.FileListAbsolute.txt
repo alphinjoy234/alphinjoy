@@ -49,3 +49,4 @@ C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\bin\
 C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\bin\Debug\net6.0-windows\runtimes\win-x64\native\krbcc64.dll
 C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\obj\Debug\net6.0-windows\Inventory_Platform.dashboard.resources
+C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\obj\Debug\net6.0-windows\Inventory_Platform.Properties.Resources.resources
