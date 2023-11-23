@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             button1 = new Button();
             checkbxShowPas = new CheckBox();
             txtpassword = new TextBox();
@@ -35,6 +37,10 @@
             txtUsername = new TextBox();
             label2 = new Label();
             label1 = new Label();
+            button2 = new Button();
+            pictureBox1 = new PictureBox();
+            imageList1 = new ImageList(components);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -45,7 +51,7 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Nirmala UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(28, 322);
+            button1.Location = new Point(32, 361);
             button1.Name = "button1";
             button1.Size = new Size(216, 35);
             button1.TabIndex = 20;
@@ -60,7 +66,7 @@
             checkbxShowPas.FlatStyle = FlatStyle.Flat;
             checkbxShowPas.Font = new Font("Comic Sans MS", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
             checkbxShowPas.ForeColor = SystemColors.ActiveCaption;
-            checkbxShowPas.Location = new Point(143, 284);
+            checkbxShowPas.Location = new Point(138, 313);
             checkbxShowPas.Name = "checkbxShowPas";
             checkbxShowPas.Size = new Size(122, 23);
             checkbxShowPas.TabIndex = 19;
@@ -73,9 +79,10 @@
             txtpassword.BackColor = Color.FromArgb(232, 233, 231);
             txtpassword.BorderStyle = BorderStyle.None;
             txtpassword.Font = new Font("Comic Sans MS", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
-            txtpassword.Location = new Point(40, 240);
+            txtpassword.Location = new Point(32, 270);
             txtpassword.Multiline = true;
             txtpassword.Name = "txtpassword";
+            txtpassword.PasswordChar = '•';
             txtpassword.Size = new Size(216, 28);
             txtpassword.TabIndex = 16;
             // 
@@ -83,7 +90,7 @@
             // 
             label3.AutoSize = true;
             label3.ForeColor = SystemColors.ActiveCaption;
-            label3.Location = new Point(40, 212);
+            label3.Location = new Point(32, 242);
             label3.Name = "label3";
             label3.Size = new Size(85, 25);
             label3.TabIndex = 15;
@@ -94,7 +101,7 @@
             txtUsername.BackColor = Color.FromArgb(232, 233, 231);
             txtUsername.BorderStyle = BorderStyle.None;
             txtUsername.Font = new Font("Comic Sans MS", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
-            txtUsername.Location = new Point(40, 165);
+            txtUsername.Location = new Point(32, 202);
             txtUsername.Multiline = true;
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(216, 28);
@@ -105,7 +112,7 @@
             // 
             label2.AutoSize = true;
             label2.ForeColor = SystemColors.ActiveCaption;
-            label2.Location = new Point(40, 137);
+            label2.Location = new Point(32, 174);
             label2.Name = "label2";
             label2.Size = new Size(92, 25);
             label2.TabIndex = 13;
@@ -114,20 +121,56 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Comic Sans MS", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("Lucida Bright", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.SteelBlue;
-            label1.Location = new Point(40, 62);
+            label1.Location = new Point(32, 101);
             label1.Name = "label1";
-            label1.Size = new Size(194, 48);
+            label1.Size = new Size(192, 39);
             label1.TabIndex = 12;
             label1.Text = "WELCOME";
+            label1.Click += label1_Click;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.White;
+            button2.Cursor = Cursors.Hand;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Nirmala UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.ForeColor = Color.SteelBlue;
+            button2.Location = new Point(32, 416);
+            button2.Name = "button2";
+            button2.Size = new Size(216, 35);
+            button2.TabIndex = 21;
+            button2.Text = "EXIT";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(168, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(109, 58);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 22;
+            pictureBox1.TabStop = false;
+            // 
+            // imageList1
+            // 
+            imageList1.ColorDepth = ColorDepth.Depth8Bit;
+            imageList1.ImageSize = new Size(16, 16);
+            imageList1.TransparentColor = Color.Transparent;
             // 
             // frmLogin
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(289, 423);
+            ClientSize = new Size(289, 512);
+            Controls.Add(pictureBox1);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(checkbxShowPas);
             Controls.Add(txtpassword);
@@ -143,6 +186,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmLogin";
             Load += frmLogin_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -155,5 +199,8 @@
         private TextBox txtUsername;
         private Label label2;
         private Label label1;
+        private Button button2;
+        private PictureBox pictureBox1;
+        private ImageList imageList1;
     }
 }

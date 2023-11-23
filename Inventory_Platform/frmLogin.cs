@@ -67,7 +67,7 @@ namespace Inventory_Platform
             }
         }
 
-       
+
 
         private void label6_Click(object sender, EventArgs e)
         {
@@ -76,6 +76,16 @@ namespace Inventory_Platform
         private void txtUsername_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

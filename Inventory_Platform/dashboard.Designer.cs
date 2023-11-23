@@ -30,9 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dashboard));
             panel1 = new Panel();
+            button6 = new Button();
             button4 = new Button();
             button3 = new Button();
-            button2 = new Button();
+            manage_inv = new Button();
             button1 = new Button();
             panel4 = new Panel();
             panel3 = new Panel();
@@ -40,12 +41,18 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             panel5 = new Panel();
+            vendorfrm11 = new vendorfrm1();
             button5 = new Button();
-            button6 = new Button();
+            panel6 = new Panel();
+            dashform11 = new dashform1();
+            vendorfrm12 = new vendorfrm1();
+            vendorfrm13 = new vendorfrm1();
+            dashform12 = new dashform1();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel5.SuspendLayout();
+            panel6.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -54,7 +61,7 @@
             panel1.Controls.Add(button6);
             panel1.Controls.Add(button4);
             panel1.Controls.Add(button3);
-            panel1.Controls.Add(button2);
+            panel1.Controls.Add(manage_inv);
             panel1.Controls.Add(button1);
             panel1.Controls.Add(panel4);
             panel1.Controls.Add(panel3);
@@ -64,6 +71,21 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(277, 700);
             panel1.TabIndex = 0;
+            // 
+            // button6
+            // 
+            button6.Cursor = Cursors.Hand;
+            button6.Dock = DockStyle.Bottom;
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.ForeColor = Color.White;
+            button6.Location = new Point(15, 520);
+            button6.Name = "button6";
+            button6.Size = new Size(247, 60);
+            button6.TabIndex = 8;
+            button6.Text = "INFO";
+            button6.TextImageRelation = TextImageRelation.ImageBeforeText;
+            button6.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
@@ -79,6 +101,7 @@
             button4.Text = "EXIT";
             button4.TextImageRelation = TextImageRelation.ImageBeforeText;
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -96,20 +119,21 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
-            // button2
+            // manage_inv
             // 
-            button2.Cursor = Cursors.Hand;
-            button2.Dock = DockStyle.Top;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(15, 159);
-            button2.Name = "button2";
-            button2.Size = new Size(247, 60);
-            button2.TabIndex = 5;
-            button2.Text = "PRODUCT";
-            button2.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button2.UseVisualStyleBackColor = true;
+            manage_inv.Cursor = Cursors.Hand;
+            manage_inv.Dock = DockStyle.Top;
+            manage_inv.FlatAppearance.BorderSize = 0;
+            manage_inv.FlatStyle = FlatStyle.Flat;
+            manage_inv.ForeColor = Color.White;
+            manage_inv.Location = new Point(15, 159);
+            manage_inv.Name = "manage_inv";
+            manage_inv.Size = new Size(247, 60);
+            manage_inv.TabIndex = 5;
+            manage_inv.Text = "Manage Inventory";
+            manage_inv.TextImageRelation = TextImageRelation.ImageBeforeText;
+            manage_inv.UseVisualStyleBackColor = true;
+            manage_inv.Click += manage_inv_Click;
             // 
             // button1
             // 
@@ -122,9 +146,10 @@
             button1.Name = "button1";
             button1.Size = new Size(247, 60);
             button1.TabIndex = 4;
-            button1.Text = "VENDOR";
+            button1.Text = "Dashboard";
             button1.TextImageRelation = TextImageRelation.ImageBeforeText;
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // panel4
             // 
@@ -161,9 +186,9 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(79, 26);
             label1.Name = "label1";
-            label1.Size = new Size(134, 23);
+            label1.Size = new Size(108, 23);
             label1.TabIndex = 1;
-            label1.Text = "DASHBOARD";
+            label1.Text = "WELCOME";
             // 
             // pictureBox1
             // 
@@ -177,12 +202,22 @@
             // 
             // panel5
             // 
+            panel5.Controls.Add(vendorfrm11);
             panel5.Controls.Add(button5);
             panel5.Dock = DockStyle.Top;
             panel5.Location = new Point(0, 0);
             panel5.Name = "panel5";
             panel5.Size = new Size(923, 56);
             panel5.TabIndex = 1;
+            // 
+            // vendorfrm11
+            // 
+            vendorfrm11.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            vendorfrm11.Location = new Point(0, 56);
+            vendorfrm11.Margin = new Padding(4, 3, 4, 3);
+            vendorfrm11.Name = "vendorfrm11";
+            vendorfrm11.Size = new Size(923, 644);
+            vendorfrm11.TabIndex = 0;
             // 
             // button5
             // 
@@ -196,20 +231,56 @@
             button5.TabIndex = 0;
             button5.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // panel6
             // 
-            button6.Cursor = Cursors.Hand;
-            button6.Dock = DockStyle.Bottom;
-            button6.FlatAppearance.BorderSize = 0;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.ForeColor = Color.White;
-            button6.Location = new Point(15, 520);
-            button6.Name = "button6";
-            button6.Size = new Size(247, 60);
-            button6.TabIndex = 8;
-            button6.Text = "INFO";
-            button6.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button6.UseVisualStyleBackColor = true;
+            panel6.Controls.Add(dashform12);
+            panel6.Controls.Add(vendorfrm13);
+            panel6.Controls.Add(dashform11);
+            panel6.Controls.Add(vendorfrm12);
+            panel6.Dock = DockStyle.Fill;
+            panel6.Location = new Point(0, 56);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(923, 644);
+            panel6.TabIndex = 2;
+            panel6.Paint += panel6_Paint;
+            // 
+            // dashform11
+            // 
+            dashform11.BackColor = SystemColors.ActiveCaption;
+            dashform11.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            dashform11.Location = new Point(0, 0);
+            dashform11.Margin = new Padding(4, 3, 4, 3);
+            dashform11.Name = "dashform11";
+            dashform11.Size = new Size(923, 644);
+            dashform11.TabIndex = 9;
+            // 
+            // vendorfrm12
+            // 
+            vendorfrm12.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            vendorfrm12.Location = new Point(0, 0);
+            vendorfrm12.Margin = new Padding(4, 3, 4, 3);
+            vendorfrm12.Name = "vendorfrm12";
+            vendorfrm12.Size = new Size(923, 666);
+            vendorfrm12.TabIndex = 0;
+            // 
+            // vendorfrm13
+            // 
+            vendorfrm13.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            vendorfrm13.Location = new Point(0, 0);
+            vendorfrm13.Margin = new Padding(4, 3, 4, 3);
+            vendorfrm13.Name = "vendorfrm13";
+            vendorfrm13.Size = new Size(931, 644);
+            vendorfrm13.TabIndex = 10;
+            // 
+            // dashform12
+            // 
+            dashform12.BackColor = SystemColors.ActiveCaption;
+            dashform12.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            dashform12.Location = new Point(0, 0);
+            dashform12.Margin = new Padding(4, 3, 4, 3);
+            dashform12.Name = "dashform12";
+            dashform12.Size = new Size(1154, 805);
+            dashform12.TabIndex = 11;
             // 
             // dashboard
             // 
@@ -217,6 +288,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1200, 700);
+            Controls.Add(panel6);
             Controls.Add(panel5);
             Controls.Add(panel1);
             Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
@@ -230,6 +302,7 @@
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel5.ResumeLayout(false);
+            panel6.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -243,10 +316,16 @@
         private Panel panel4;
         private Button button1;
         private Button button3;
-        private Button button2;
+        private Button manage_inv;
         private Button button4;
         private Panel panel5;
         private Button button5;
         private Button button6;
+        private Panel panel6;
+        private vendorfrm1 vendorfrm11;
+        private vendorfrm1 vendorfrm12;
+        private dashform1 dashform11;
+        private dashform1 dashform12;
+        private vendorfrm1 vendorfrm13;
     }
 }
