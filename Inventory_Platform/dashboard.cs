@@ -39,13 +39,25 @@ namespace Inventory_Platform
         {
             Application.Exit();
         }
+        private void dashboard_Load(object sender, PaintEventArgs e)
+        {
+            vf1.Hide();
+            df1.Hide();
+        }
 
         private void manage_inv_Click(object sender, EventArgs e)
         {
-            if (!this.Controls.Contains(vf1))
-                this.Controls.Add(vf1);
-            vf1.Visible = true;
-            
+
+
+            if (this.vf1.Visible == false)
+            {
+                this.vf1.Visible = true;
+            }
+            else if (this.vf1.Visible == true)
+            {
+                this.vf1.Visible = false;
+            }
+
 
         }
 
@@ -57,12 +69,29 @@ namespace Inventory_Platform
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (!this.Controls.Contains(df1))
-                this.Controls.Add(df1);
-            df1.Visible = true;
 
-           
+            if (this.df1.Visible == false)
+            {
+                this.df1.Visible = true;
+            }
+            else if (this.df1.Visible == true)
+            {
+                this.df1.Visible = false;
+            }
+
+
 
         }
+
+        private void vendorfrm14_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+
     }
 }
