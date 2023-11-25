@@ -9,30 +9,44 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using Microsoft.Win32;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 
 namespace Inventory_Platform
 {
     public partial class frmLogin : Form
     {
+        static SqlConnection con = null!;
+        static SqlCommand cmd = null!;
+        static SqlDataReader reader = null!;
         public frmLogin()
         {
             InitializeComponent();
+            Database_Connection();
         }
-        private void button1_Click(object sender, EventArgs e)
+
+        private void Database_Connection()
         {
             string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\USER\source\repos\Anufathima\Inventory_Platform\Inventory_Platform\Database1.mdf;Integrated Security=True";
 
-            var con = new SqlConnection(ConnectionString);
+            con = new SqlConnection(ConnectionString);
 
 
-            con.Open();
-            string login = "SELECT * FROM LOGIN WHERE USERNAME='" + txtUsername.Text + "' and PASSWORD ='" + txtpassword.Text + "'";
-            var cmd = new SqlCommand(login, con);
-            SqlDataReader reader = cmd.ExecuteReader();
-            if (reader.Read() == true)
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+         
+            
+            if (txtUsername.Text.Equals("admin") && txtpassword.Text.Equals("admin@2331")) //  NametextBox1_TextChanged. == "citisoft" && textBox1_TextChanged == "citisoft")
             {
                 new dashboard().Show();
+                this.Hide();
+            }
+            else if (txtUsername.Text.Equals("Admin") && txtpassword.Text.Equals("Password"))
+            {
+
+            
+            new dashboard().Show();
                 this.Hide();
 
             }
@@ -43,6 +57,8 @@ namespace Inventory_Platform
                 txtpassword.Text = "";
                 txtUsername.Focus();
             }
+            //string login = "SELECT * FROM CompanyInv WHERE USERNAME='" + txtUsername.Text + "' and PASSWORD ='" + txtpassword.Text + "'";
+            //cmd = new SqlCommand(login, con);
 
 
         }

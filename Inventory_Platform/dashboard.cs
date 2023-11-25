@@ -48,15 +48,10 @@ namespace Inventory_Platform
         private void manage_inv_Click(object sender, EventArgs e)
         {
 
+            this.panel6.Controls.Clear();
 
-            if (this.vf1.Visible == false)
-            {
-                this.vf1.Visible = true;
-            }
-            else if (this.vf1.Visible == true)
-            {
-                this.vf1.Visible = false;
-            }
+            this.panel6.Controls.Add(vf1);
+            vf1.Show();
 
 
         }
@@ -70,14 +65,10 @@ namespace Inventory_Platform
         private void button1_Click(object sender, EventArgs e)
         {
 
-            if (this.df1.Visible == false)
-            {
-                this.df1.Visible = true;
-            }
-            else if (this.df1.Visible == true)
-            {
-                this.df1.Visible = false;
-            }
+            this.panel6.Controls.Clear();
+
+            this.panel6.Controls.Add(df1);
+            vf1.Show();
 
 
 

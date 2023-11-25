@@ -44,16 +44,10 @@
             vendorfrm11 = new vendorfrm1();
             button5 = new Button();
             panel6 = new Panel();
-            vendorfrm14 = new vendorfrm1();
-            dashform12 = new dashform1();
-            vendorfrm13 = new vendorfrm1();
-            dashform11 = new dashform1();
-            vendorfrm12 = new vendorfrm1();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel5.SuspendLayout();
-            panel6.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -147,7 +141,7 @@
             button1.Name = "button1";
             button1.Size = new Size(247, 60);
             button1.TabIndex = 4;
-            button1.Text = "Dashboard";
+            button1.Text = "Home";
             button1.TextImageRelation = TextImageRelation.ImageBeforeText;
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
@@ -183,11 +177,11 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.FromArgb(64, 64, 64);
-            label1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
             label1.Location = new Point(79, 26);
             label1.Name = "label1";
-            label1.Size = new Size(108, 23);
+            label1.Size = new Size(117, 25);
             label1.TabIndex = 1;
             label1.Text = "WELCOME";
             // 
@@ -214,7 +208,7 @@
             // 
             // vendorfrm11
             // 
-            vendorfrm11.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            vendorfrm11.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             vendorfrm11.Location = new Point(0, 56);
             vendorfrm11.Margin = new Padding(4, 3, 4, 3);
             vendorfrm11.Name = "vendorfrm11";
@@ -235,11 +229,6 @@
             // 
             // panel6
             // 
-            panel6.Controls.Add(vendorfrm14);
-            panel6.Controls.Add(dashform12);
-            panel6.Controls.Add(vendorfrm13);
-            panel6.Controls.Add(dashform11);
-            panel6.Controls.Add(vendorfrm12);
             panel6.Dock = DockStyle.Fill;
             panel6.Location = new Point(0, 56);
             panel6.Name = "panel6";
@@ -247,64 +236,16 @@
             panel6.TabIndex = 2;
             panel6.Paint += panel6_Paint;
             // 
-            // vendorfrm14
-            // 
-            vendorfrm14.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            vendorfrm14.Location = new Point(0, 0);
-            vendorfrm14.Margin = new Padding(4, 3, 4, 3);
-            vendorfrm14.Name = "vendorfrm14";
-            vendorfrm14.Size = new Size(1154, 805);
-            vendorfrm14.TabIndex = 12;
-            vendorfrm14.Load += vendorfrm14_Load;
-            // 
-            // dashform12
-            // 
-            dashform12.BackColor = SystemColors.ActiveCaption;
-            dashform12.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            dashform12.Location = new Point(0, 0);
-            dashform12.Margin = new Padding(4, 3, 4, 3);
-            dashform12.Name = "dashform12";
-            dashform12.Size = new Size(1154, 805);
-            dashform12.TabIndex = 11;
-            // 
-            // vendorfrm13
-            // 
-            vendorfrm13.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            vendorfrm13.Location = new Point(0, 0);
-            vendorfrm13.Margin = new Padding(4, 3, 4, 3);
-            vendorfrm13.Name = "vendorfrm13";
-            vendorfrm13.Size = new Size(931, 644);
-            vendorfrm13.TabIndex = 10;
-            // 
-            // dashform11
-            // 
-            dashform11.BackColor = SystemColors.ActiveCaption;
-            dashform11.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            dashform11.Location = new Point(0, 0);
-            dashform11.Margin = new Padding(4, 3, 4, 3);
-            dashform11.Name = "dashform11";
-            dashform11.Size = new Size(923, 644);
-            dashform11.TabIndex = 9;
-            // 
-            // vendorfrm12
-            // 
-            vendorfrm12.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            vendorfrm12.Location = new Point(0, 0);
-            vendorfrm12.Margin = new Padding(4, 3, 4, 3);
-            vendorfrm12.Name = "vendorfrm12";
-            vendorfrm12.Size = new Size(923, 666);
-            vendorfrm12.TabIndex = 0;
-            // 
             // dashboard
             // 
-            AutoScaleDimensions = new SizeF(10F, 21F);
+            AutoScaleDimensions = new SizeF(10F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1200, 700);
             Controls.Add(panel6);
             Controls.Add(panel5);
             Controls.Add(panel1);
-            Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4, 3, 4, 3);
             Name = "dashboard";
@@ -315,7 +256,6 @@
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel5.ResumeLayout(false);
-            panel6.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -336,10 +276,5 @@
         private Button button6;
         private Panel panel6;
         private vendorfrm1 vendorfrm11;
-        private vendorfrm1 vendorfrm12;
-        private dashform1 dashform11;
-        private dashform1 dashform12;
-        private vendorfrm1 vendorfrm13;
-        private vendorfrm1 vendorfrm14;
     }
 }
