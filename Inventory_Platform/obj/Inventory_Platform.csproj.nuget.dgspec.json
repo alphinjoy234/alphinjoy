@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lenovo\\Source\\Repos\\Anufathima\\Inventory_Platform\\Inventory_Platform\\Inventory_Platform.csproj": {}
+    "C:\\Users\\amalr\\Source\\Repos\\alphinjoy\\Inventory_Platform\\Inventory_Platform.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lenovo\\Source\\Repos\\Anufathima\\Inventory_Platform\\Inventory_Platform\\Inventory_Platform.csproj": {
+    "C:\\Users\\amalr\\Source\\Repos\\alphinjoy\\Inventory_Platform\\Inventory_Platform.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo\\Source\\Repos\\Anufathima\\Inventory_Platform\\Inventory_Platform\\Inventory_Platform.csproj",
+        "projectUniqueName": "C:\\Users\\amalr\\Source\\Repos\\alphinjoy\\Inventory_Platform\\Inventory_Platform.csproj",
         "projectName": "Inventory_Platform",
-        "projectPath": "C:\\Users\\lenovo\\Source\\Repos\\Anufathima\\Inventory_Platform\\Inventory_Platform\\Inventory_Platform.csproj",
-        "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenovo\\Source\\Repos\\Anufathima\\Inventory_Platform\\Inventory_Platform\\obj\\",
+        "projectPath": "C:\\Users\\amalr\\Source\\Repos\\alphinjoy\\Inventory_Platform\\Inventory_Platform.csproj",
+        "packagesPath": "C:\\Users\\amalr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amalr\\Source\\Repos\\alphinjoy\\Inventory_Platform\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\amalr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -68,24 +64,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.25, 6.0.25]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
