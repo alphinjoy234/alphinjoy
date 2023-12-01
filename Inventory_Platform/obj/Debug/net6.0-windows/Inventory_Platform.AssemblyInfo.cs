@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Inventory_Platform")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b8c059e2c8083e028fe53e61141b8f9e339eaa7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Inventory_Platform")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Inventory_Platform")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

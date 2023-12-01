@@ -13,6 +13,9 @@
     <Compile Update="UserDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="userform1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="UserHome.cs">
       <SubType>Form</SubType>
     </Compile>
