@@ -37,16 +37,16 @@ namespace Inventory_Platform
         {
          
             
-            if (txtUsername.Text.Equals("admin") && txtpassword.Text.Equals("admin@2331")) //  NametextBox1_TextChanged. == "citisoft" && textBox1_TextChanged == "citisoft")
+            if (txtUsername.Text.Equals("admin") && txtpassword.Text.Equals("admin@2331"))
             {
                 new dashboard().Show();
                 this.Hide();
             }
-            else if (txtUsername.Text.Equals("Admin") && txtpassword.Text.Equals("Password"))
+            else if (txtUsername.Text.Equals("user") && txtpassword.Text.Equals("user@2331"))
             {
 
             
-            new dashboard().Show();
+            new UserDashboard().Show();
                 this.Hide();
 
             }

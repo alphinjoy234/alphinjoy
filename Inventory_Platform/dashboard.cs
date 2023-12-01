@@ -20,11 +20,6 @@ namespace Inventory_Platform
             InitializeComponent();
         }
 
-        private void dashboard_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
@@ -68,14 +63,9 @@ namespace Inventory_Platform
             this.panel6.Controls.Clear();
 
             this.panel6.Controls.Add(df1);
-            vf1.Show();
+            df1.Show();
 
 
-
-        }
-
-        private void vendorfrm14_Load(object sender, EventArgs e)
-        {
 
         }
         private void panel5_Paint(object sender, PaintEventArgs e)

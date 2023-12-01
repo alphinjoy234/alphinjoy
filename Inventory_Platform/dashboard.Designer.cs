@@ -125,7 +125,7 @@
             manage_inv.Name = "manage_inv";
             manage_inv.Size = new Size(247, 60);
             manage_inv.TabIndex = 5;
-            manage_inv.Text = "Manage Inventory";
+            manage_inv.Text = "MANAGE INVENTORY";
             manage_inv.TextImageRelation = TextImageRelation.ImageBeforeText;
             manage_inv.UseVisualStyleBackColor = true;
             manage_inv.Click += manage_inv_Click;
@@ -141,13 +141,14 @@
             button1.Name = "button1";
             button1.Size = new Size(247, 60);
             button1.TabIndex = 4;
-            button1.Text = "Home";
+            button1.Text = "HOME";
             button1.TextImageRelation = TextImageRelation.ImageBeforeText;
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // panel4
             // 
+            panel4.BorderStyle = BorderStyle.FixedSingle;
             panel4.Dock = DockStyle.Left;
             panel4.Location = new Point(0, 99);
             panel4.Name = "panel4";
@@ -156,6 +157,7 @@
             // 
             // panel3
             // 
+            panel3.BorderStyle = BorderStyle.FixedSingle;
             panel3.Dock = DockStyle.Right;
             panel3.Location = new Point(262, 99);
             panel3.Name = "panel3";
@@ -164,6 +166,7 @@
             // 
             // panel2
             // 
+            panel2.BorderStyle = BorderStyle.FixedSingle;
             panel2.Controls.Add(label1);
             panel2.Controls.Add(pictureBox1);
             panel2.Dock = DockStyle.Top;
@@ -197,6 +200,7 @@
             // 
             // panel5
             // 
+            panel5.BorderStyle = BorderStyle.FixedSingle;
             panel5.Controls.Add(vendorfrm11);
             panel5.Controls.Add(button5);
             panel5.Dock = DockStyle.Top;
@@ -229,6 +233,7 @@
             // 
             // panel6
             // 
+            panel6.BorderStyle = BorderStyle.FixedSingle;
             panel6.Dock = DockStyle.Fill;
             panel6.Location = new Point(0, 56);
             panel6.Name = "panel6";
@@ -272,9 +277,9 @@
         private Button manage_inv;
         private Button button4;
         private Panel panel5;
-        private Button button5;
         private Button button6;
         private Panel panel6;
         private vendorfrm1 vendorfrm11;
+        private Button button5;
     }
 }
